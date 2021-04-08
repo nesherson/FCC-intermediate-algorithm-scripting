@@ -10,8 +10,8 @@ function hasDuplicate(arr, num) {
 }
 
 function diffArray(arr1, arr2) {
-  const con = arr1.concat(arr2);
-  const newArr = con.filter((num) => !hasDuplicate(con, num));
+  const concatArr = arr1.concat(arr2);
+  const newArr = concatArr.filter((num) => !hasDuplicate(concatArr, num));
 
   return newArr;
 }
