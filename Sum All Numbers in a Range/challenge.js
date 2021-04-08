@@ -9,6 +9,7 @@ function sumAll(arr) {
   return sum;
 }
 
+// TESTS
 // sumAll([1, 4]) should return a number.
 // sumAll([1, 4]) should return 10.
 // sumAll([4, 1]) should return 10.
