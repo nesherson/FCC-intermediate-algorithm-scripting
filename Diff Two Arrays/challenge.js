@@ -11,7 +11,6 @@ function hasDuplicate(arr, num) {
 
 function diffArray(arr1, arr2) {
   const con = arr1.concat(arr2);
-  con.sort((a, b) => a - b);
   const newArr = con.filter((num) => !hasDuplicate(con, num));
 
   return newArr;
