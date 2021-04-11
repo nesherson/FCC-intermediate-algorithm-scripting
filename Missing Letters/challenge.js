@@ -11,7 +11,6 @@ function hasDuplicate(arr, num) {
   return false;
 }
 
-
 function fearNotLetter(str) {
   const splitStr = str.split('');
   const first = splitStr[0];
@@ -28,4 +27,10 @@ function fearNotLetter(str) {
   
   return tempArr === '' ? undefined : tempArr;
 }
-fearNotLetter("abce");
+
+// TESTS
+// fearNotLetter("abce") should return the string d.
+// fearNotLetter("abcdefghjklmno") should return the string i.
+// fearNotLetter("stvwx") should return the string u.
+// fearNotLetter("bcdf") should return the string e.
+// fearNotLetter("abcdefghijklmnopqrstuvwxyz") should return undefined.
