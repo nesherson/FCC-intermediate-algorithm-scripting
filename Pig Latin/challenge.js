@@ -10,8 +10,6 @@ const extractConsonants = (string) => {
     return null;
   }
   
-  
-  
   const consonants = [];
   
   for (let i = 0; i < string.length; i++) {
@@ -39,4 +37,11 @@ function translatePigLatin(str) {
   }
 }
 
-translatePigLatin("consonant");
+// TESTS
+// translatePigLatin("california") should return the string aliforniacay.
+// translatePigLatin("paragraphs") should return the string aragraphspay.
+// translatePigLatin("glove") should return the string oveglay.
+// translatePigLatin("algorithm") should return the string algorithmway.
+// translatePigLatin("eight") should return the string eightway.
+// Should handle words where the first vowel comes in the middle of the word. translatePigLatin("schwartz") should return the string artzschway.
+// Should handle words without vowels. translatePigLatin("rhythm") should return the string rhythmay.
