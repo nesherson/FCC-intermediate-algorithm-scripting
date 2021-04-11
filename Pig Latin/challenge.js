@@ -6,9 +6,6 @@ const isVowel = (char) => {
 
 const extractConsonants = (string) => {
   const tempStr = string.split('');
-  if (!tempStr.some(letter => isVowel(letter))) {
-    return null;
-  }
   
   const consonants = [];
   
@@ -27,9 +24,7 @@ function translatePigLatin(str) {
   if (!isVowel(firstLetter)) {
     
   const consonants = extractConsonants(str);
-    if (consonants === null) {
-      return str + 'ay';
-    }
+    
   const newStr = str.slice(consonants.length) + consonants.join('') + 'ay';
   return newStr;
   } else {
