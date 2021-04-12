@@ -8,10 +8,9 @@ const divisibleByAll = (start, end, num) => {
   }
   
   function smallestCommons(arr) {
-    arr.sort((a, b) => a - b);
-    
-    const first = arr[0];
-    const second = arr[1];
+    const sortedArr = [...arr].sort((a, b) => a - b);
+    const first = sortedArr[0];
+    const second = sortedArr[1];
     let counter = second;
     
     while(!divisibleByAll(first, second, counter)) {
@@ -19,7 +18,7 @@ const divisibleByAll = (start, end, num) => {
     } 
     return counter;
   }
-
+  
 // TESTS
 // smallestCommons([1, 5]) should return a number.
 // smallestCommons([1, 5]) should return 60.
